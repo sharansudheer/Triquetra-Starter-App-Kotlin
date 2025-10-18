@@ -12,7 +12,7 @@ class HouseOfTargaryen : ComponentActivity() {
         }
     }
 
-    private fun setContent(function: () -> Unit) {}
+    private fun setContent(function: () -> kotlin.Unit) {}
 }
 
 
