@@ -21,7 +21,7 @@ class LoginViewModel : ViewModel() {
     fun login(onSuccess: () -> Unit = {}) {
         // Simple local check for demo — replace with real auth later
         val current = _uiState.value
-        if (current.name == "admin" && current.password == "1234") {
+        if (current.name == "" && current.password == "") {
             _uiState.update { it.copy(isLoggedIn = true, errorMessage = null) }
             onSuccess()
         } else {
