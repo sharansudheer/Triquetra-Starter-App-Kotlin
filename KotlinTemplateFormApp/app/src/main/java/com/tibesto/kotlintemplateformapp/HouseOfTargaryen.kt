@@ -1,7 +1,7 @@
 package com.tibesto.kotlintemplateformapp
 
 import android.os.Bundle
-import androidx.core.app.ComponentActivity
+import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 
 class HouseOfTargaryen : ComponentActivity() {
@@ -11,9 +11,8 @@ class HouseOfTargaryen : ComponentActivity() {
             RedWedding()
         }
     }
-
-    private fun setContent(function: () -> kotlin.Unit) {}
 }
+
 
 
 

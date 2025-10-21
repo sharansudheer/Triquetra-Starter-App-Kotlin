@@ -1,11 +1,15 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
     namespace = "com.tibesto.kotlintemplateformapp"
     compileSdk = 35
+    buildFeatures {
+        compose = true
+    }
 
     defaultConfig {
         applicationId = "com.tibesto.kotlintemplateformapp"

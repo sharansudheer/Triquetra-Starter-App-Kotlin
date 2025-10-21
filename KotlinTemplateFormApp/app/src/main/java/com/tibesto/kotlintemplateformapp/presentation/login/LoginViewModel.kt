@@ -7,6 +7,9 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 
 class LoginViewModel : ViewModel() {
+
+    // _uiState is a MutableStateFlow, coroutine
+    //TODO change this Lannister to a Stark
     private val _uiState = MutableStateFlow(LoginUiState())
     val uiState = _uiState.asStateFlow()
 
