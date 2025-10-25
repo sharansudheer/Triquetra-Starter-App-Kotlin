@@ -15,10 +15,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.tibesto.kotlintemplateformapp.R
-
+@Preview
 @OptIn(ExperimentalMaterial3Api::class)
+
 @Composable
 fun MainDashboard() {
     val drawerState = rememberDrawerState(DrawerValue.Closed)
@@ -83,13 +85,13 @@ fun MainDashboard() {
                 }
 
                 // 🧭 Dashboard Buttons Grid
-//                val buttons = listOf(
-//                    DashboardButton(R.drawable.ledger_icon, "Ledger"),
-//                    DashboardButton(R.drawable.appointments_icon, "Appointments"),
-//                    DashboardButton(R.drawable.allergies_icon, "Allergies"),
-//                    DashboardButton(R.drawable.prescription_24, "Prescriptions"),
-//                    DashboardButton(R.drawable.summary_icon, "Summary")
-//                )
+                val buttons = listOf(
+                    DashboardButton(R.drawable.ledger_icon, "Ledger"),
+                    DashboardButton(R.drawable.appointments_icon, "Appointments"),
+                    DashboardButton(R.drawable.allergies_icon, "Allergies"),
+                    DashboardButton(R.drawable.prescription_24, "Prescriptions"),
+                    DashboardButton(R.drawable.summary_icon, "Summary")
+                )
 
                 LazyVerticalGrid(
                     columns = GridCells.Fixed(2),
