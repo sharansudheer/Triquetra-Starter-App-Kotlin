@@ -1,4 +1,4 @@
-package com.tibesto.kotlintemplateformapp.presentation.Dashboard
+package com.tibesto.kotlintemplateformapp.presentation.dashboard
 
 
 import androidx.compose.foundation.Image
