@@ -1,6 +1,7 @@
-package com.tibesto.kotlintemplateformapp.presentation
+package com.tibesto.kotlintemplateformapp.presentation.lazylist
 
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.HorizontalDivider
@@ -10,8 +11,8 @@ import androidx.compose.ui.Modifier
 
 @Composable
 // recyclerView.layoutManager = LinearLayoutManager(context)
-LazyColumn(Modifier.fillMaxSize())
-@Composable
+//LazyColumn(Modifier.fillMaxSize())
+
 fun ListItem(data: MyData, modifier: Modifier = Modifier) {
     val data = listOf<MyData>(/* ... */)
     Row(modifier.fillMaxWidth()) {
